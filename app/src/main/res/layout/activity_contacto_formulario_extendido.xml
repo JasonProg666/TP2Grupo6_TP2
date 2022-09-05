@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contacto_Formulario_Extendido">
+
+    <CheckBox
+        android:id="@+id/chkTecnologia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/chkTecnologia"
+        app:layout_constraintStart_toEndOf="@+id/chkArte"
+        app:layout_constraintTop_toBottomOf="@+id/chkMusica" />
+
+    <CheckBox
+        android:id="@+id/chkArte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/chkArte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkDeporte" />
+
+    <CheckBox
+        android:id="@+id/chkMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/chkMusica"
+        app:layout_constraintStart_toEndOf="@+id/chkDeporte"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="NIVEL DE ESTUDIOS ALCANZADOS"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvFormularioExtendido"
+        android:layout_width="387dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tvFormularioExtendido"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFormularioExtendidoTitulo" />
+
+    <TextView
+        android:id="@+id/tvFormularioExtendidoTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/tvFormularioExtendidoTitulo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="385dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/rbPriIncompleto"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rbPriIncompleto" />
+
+        <RadioButton
+            android:id="@+id/rbPriCompleto"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rbPriCompleto" />
+
+        <RadioButton
+            android:id="@+id/rbSecIncompleto"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rbSecIncompleto" />
+
+        <RadioButton
+            android:id="@+id/rbSecCompleto"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rbSecCompleto" />
+
+        <RadioButton
+            android:id="@+id/rbOtros"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rbOtros" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="NIVEL DE ESTUDIOS ALCANZADOS"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFormularioExtendido" />
+
+    <CheckBox
+        android:id="@+id/chkDeporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/chkDeporte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Si"
+        app:layout_constraintStart_toEndOf="@+id/tvInformacion"
+        app:layout_constraintTop_toBottomOf="@+id/chkTecnologia" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Guardar"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/chkTecnologia" />
+
+    <TextView
+        android:id="@+id/tvInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Desea Recibir Información?"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkArte" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

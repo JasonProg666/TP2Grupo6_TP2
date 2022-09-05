@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TP2 Grupo6</string>
+
+    <!-- Activity: Contacto Agregar -->
+    <string name="tvFormularioAgregarTitulo">A continuación, por favor se pide completar más datos personales.</string>
+    <string name="tvFormularioAgregar">Este es un formulario destinado al registro de personas, sus datos personales e intereses.</string>
+
+    <!-- Activity: Contacto formulario extendido -->
+    <string name="tvFormularioExtendidoTitulo">FORMULARIO DE CONTACTO</string>
+    <string name="tvFormularioExtendido">A continuación, por favor se pide completar más datos personales.</string>
+    <string name="rbPriIncompleto">Primario Incompleto</string>
+    <string name="rbPriCompleto">Primario Completo</string>
+    <string name="rbSecIncompleto">Secundario Incompleto</string>
+    <string name="rbSecCompleto">Secundario Completo</string>
+    <string name="rbOtros">Otros</string>
+
+    <string name="chkArte">Arte</string>
+    <string name="chkDeporte">Deporte</string>
+    <string name="chkMusica">Musica</string>
+    <string name="chkTecnologia">Tecnologia</string>
+
+</resources>
