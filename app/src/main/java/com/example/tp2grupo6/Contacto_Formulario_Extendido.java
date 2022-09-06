@@ -22,7 +22,8 @@ public class Contacto_Formulario_Extendido extends AppCompatActivity {
     private Switch sch;
 
     //Atributos para recibir los datos del activity Agregar
-    private String nombre,apellido,telefono,mail,direccion,fecha,tipoTelefono,tipoMail,agenda;
+    private String nombre,apellido,telefono,mail,direccion,fecha,tipoTelefono,tipoMail;
+    private String intereses = "", estudio = "", informacion = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,47 +39,51 @@ public class Contacto_Formulario_Extendido extends AppCompatActivity {
         this.fecha=getIntent().getStringExtra("fecha");
         this.tipoTelefono=getIntent().getStringExtra("tipoTelefono");
         this.tipoMail=getIntent().getStringExtra("tipoMail");
-        this.agenda=abrir("agenda.txt");
+
+        r1 = (RadioButton) findViewById(R.id.rbPriIncompleto);
+        r2 = (RadioButton) findViewById(R.id.rbPriCompleto);
+        r3 = (RadioButton) findViewById(R.id.rbSecIncompleto);
+        r4 = (RadioButton) findViewById(R.id.rbSecCompleto);
+        r5 = (RadioButton) findViewById(R.id.rbOtros);
+        ck1 = (CheckBox) findViewById(R.id.chkArte);
+        ck2 = (CheckBox) findViewById(R.id.chkDeporte);
+        ck3 = (CheckBox) findViewById(R.id.chkMusica);
+        ck4 = (CheckBox) findViewById(R.id.chkTecnologia);
+        sch = (Switch) findViewById(R.id.switch1);
+
     }
 
-    //METODO PARA GUARDAR, AHORA SOLO GUARDA LO INGRESADO EN EL ACTIVITY ANTERIOR
-    //GUARDA UN RENGLON CON LOS DATOS INGRESADOS PERO AL GUARDAR OTRO CONTACTO SE SOBREESCRIBE
-    //HABRIA QUE CONCATENAR LO GUARDADO PREVIAMENTE CON LO QUE SE VA A GUARDAR AHORA Y SOBREESCRIR EL ARCHIVO
-    //DEBE HABER OTRAS MANERAS DE HACERLO
     public void Guardar(View view){
+
+        if(ck1.isChecked()) intereses += ck1.getText().toString();
+
+        if (ck2.isChecked()) intereses += " " + ck2.getText().toString();
+
+        if (ck3.isChecked()) intereses += " " + ck3.getText().toString();
+
+        if (ck4.isChecked()) intereses += " " + ck4.getText().toString();
+
+        if (r1.isChecked()) estudio = r1.getText().toString();
+        if (r2.isChecked()) estudio = r2.getText().toString();
+        if (r3.isChecked()) estudio = r3.getText().toString();
+        if (r4.isChecked()) estudio = r4.getText().toString();
+        if (r5.isChecked()) estudio = r5.getText().toString();
+
+        informacion = (sch.isChecked())? "Si":"No";
         try{
-            OutputStreamWriter archivo = new OutputStreamWriter(openFileOutput("agenda.txt", Activity.MODE_PRIVATE));
-            String datos=nombre+","+apellido+","+telefono+","+mail+","+direccion+
-                    ","+fecha+","+tipoTelefono+","+tipoMail+"\n";
+            OutputStreamWriter archivo = new OutputStreamWriter(openFileOutput("agenda.txt", Activity.MODE_APPEND));
+            String datos=nombre+","+apellido+","+mail+","+telefono+","+direccion+
+                    ","+fecha+","+tipoTelefono+","+tipoMail+ "," + estudio + "," + intereses + "," + informacion +"\n";
             archivo.write(datos);
             archivo.flush();
             archivo.close();
+            Toast.makeText(this, "Contacto Guardado", Toast.LENGTH_SHORT).show();
         }
         catch (IOException e){
-
+            Toast.makeText(this, "Error al guardar el contacto", Toast.LENGTH_SHORT).show();
         }
-        Toast.makeText(this, "Contacto Guardado", Toast.LENGTH_SHORT).show();
+
     }
 
-    //EL METODO ABRE UN ARCHIVO Y DEVUELVE UN STRING CON SU CONTENIDO. SI ESTA VACIO DEVUELVE UN STRING VACIO
-    //LO ARME ACA PARA VER SI PODIA CONCATENAR LO GUARDADO ANTERIORMENTE CON LO QUE SE VA A GUARDAR AHORA
-    public String abrir(String nombreArchivo){
-        String agenda="";
-        try{
-            InputStreamReader archivo = new InputStreamReader(openFileInput(nombreArchivo));
-            BufferedReader lector= new BufferedReader(archivo);
-            String linea= lector.readLine();
-            while(linea!=null){
-                agenda= agenda+linea+"\n";
-                linea=lector.readLine();
-            }
-            lector.close();
-            archivo.close();
-        }
-        catch(IOException e){
-
-        }
-        return agenda;
-    }
 
 }
