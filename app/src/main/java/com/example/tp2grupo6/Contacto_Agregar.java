@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class Contacto_Agregar extends AppCompatActivity {
 
-    private Spinner spinnerTel;
-    private Spinner spinnerMail;
+    private Spinner spinnerTel, spinnerMail;
+    private EditText etNombre, etApellido, etTelefono, etMail, etDireccion, etFecha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,15 @@ public class Contacto_Agregar extends AppCompatActivity {
 
         spinnerMail = (Spinner)findViewById(R.id.spinnerMail);
         spinnerMail.setAdapter(adapter);
+
+        etNombre = (EditText) findViewById(R.id.txtNombre);
+        etApellido = (EditText) findViewById(R.id.txtApellido);
+        etTelefono = (EditText) findViewById(R.id.txtTelefono);
+        etMail = (EditText) findViewById(R.id.txtMail);
+        etDireccion = (EditText) findViewById(R.id.txtDireccion);
+        etFecha = (EditText) findViewById(R.id.dtFechaNac);
+
+
     }
 
 
