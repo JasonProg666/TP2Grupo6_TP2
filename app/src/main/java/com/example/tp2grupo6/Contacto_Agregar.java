@@ -41,12 +41,28 @@ public class Contacto_Agregar extends AppCompatActivity {
 
     }
 
-
     //Ir a  Contacto Extendido
     public void ContactoExtendido(View view) {
-        Intent Extendido = new Intent(this, Contacto_Formulario_Extendido.class);
-        startActivity(Extendido);
+        Intent extendido = new Intent(this, Contacto_Formulario_Extendido.class);
+        String nombre=etNombre.getText().toString();
+        String apellido=etApellido.getText().toString();
+        String telefono=etTelefono.getText().toString();
+        String mail=etMail.getText().toString();
+        String direccion=etDireccion.getText().toString();
+        String fecha=etFecha.getText().toString();
+        String tipoTelefono=spinnerTel.getSelectedItem().toString();
+        String tipoMail=spinnerMail.getSelectedItem().toString();
 
+        extendido.putExtra("nombre",nombre);
+        extendido.putExtra("apellido",apellido);
+        extendido.putExtra("telefono",telefono);
+        extendido.putExtra("mail",mail);
+        extendido.putExtra("direccion",direccion);
+        extendido.putExtra("fecha",fecha);
+        extendido.putExtra("tipoTelefono",tipoTelefono);
+        extendido.putExtra("tipoMail",tipoMail);
+
+        startActivity(extendido);
     }
 
 
