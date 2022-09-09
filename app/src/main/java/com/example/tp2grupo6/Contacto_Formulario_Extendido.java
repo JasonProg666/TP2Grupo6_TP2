@@ -56,11 +56,8 @@ public class Contacto_Formulario_Extendido extends AppCompatActivity {
     public void Guardar(View view){
 
         if(ck1.isChecked()) intereses += ck1.getText().toString();
-
         if (ck2.isChecked()) intereses += " " + ck2.getText().toString();
-
         if (ck3.isChecked()) intereses += " " + ck3.getText().toString();
-
         if (ck4.isChecked()) intereses += " " + ck4.getText().toString();
 
         if (r1.isChecked()) estudio = r1.getText().toString();
@@ -78,6 +75,10 @@ public class Contacto_Formulario_Extendido extends AppCompatActivity {
             archivo.flush();
             archivo.close();
             Toast.makeText(this, "Contacto Guardado", Toast.LENGTH_SHORT).show();
+
+            //que vuelva a la pantalla de inicio
+            MainActivity ma = new MainActivity();
+            ma.onCreateOptionsMenu(null);
         }
         catch (IOException e){
             Toast.makeText(this, "Error al guardar el contacto", Toast.LENGTH_SHORT).show();

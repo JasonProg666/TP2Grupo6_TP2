@@ -37,8 +37,6 @@ public class Contacto_Agregar extends AppCompatActivity {
         etMail = (EditText) findViewById(R.id.txtMail);
         etDireccion = (EditText) findViewById(R.id.txtDireccion);
         etFecha = (EditText) findViewById(R.id.dtFechaNac);
-
-
     }
 
     //Ir a  Contacto Extendido

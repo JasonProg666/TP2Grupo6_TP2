@@ -14,17 +14,20 @@
         android:theme="@style/Theme.TP2Grupo6"
         tools:targetApi="31">
         <activity
+            android:name=".activity_contacto_lista_mostrar"  android:parentActivityName=".Contacto_Lista"
+            android:exported="false" />
+        <activity
             android:name=".Contacto_Lista"
             android:exported="false"
-            android:label="EjercicioControles"/>
+            android:label="EjercicioControles" />
         <activity
             android:name=".Contacto_Formulario_Extendido"
             android:exported="false"
-            android:label="EjercicioControles"/>
+            android:label="EjercicioControles" />
         <activity
             android:name=".Contacto_Agregar"
             android:exported="false"
-        android:label="EjercicioControles"/>
+            android:label="EjercicioControles" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
