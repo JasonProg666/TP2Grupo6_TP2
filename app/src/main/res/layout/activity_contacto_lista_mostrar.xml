@@ -20,75 +20,164 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/TextView"
+        android:id="@+id/txtTitNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tvFormularioExtendidoTitulo"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="48dp"
+        android:text="Nombre y Apellido:"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/TextViewSeMostrara" />
 
     <TextView
-        android:id="@+id/TextView2"
+        android:id="@+id/txtLblNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tvFormularioExtendidoTitulo"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        android:text="texto"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTitNombre"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewSeMostrara" />
 
     <TextView
-        android:id="@+id/TextView3"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tvFormularioExtendidoTitulo"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="36dp"
+        android:text="Teléfono"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitNombre" />
 
     <TextView
-        android:id="@+id/TextView4"
+        android:id="@+id/txtLblTelefono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tvFormularioExtendidoTitulo"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="texto"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/txtLblNombre" />
 
     <TextView
-        android:id="@+id/TextView5"
+        android:id="@+id/txtTitEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tvFormularioExtendidoTitulo"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="36dp"
+        android:text="Email:"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
-        android:id="@+id/TextView6"
+        android:id="@+id/txtLblEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tvFormularioExtendidoTitulo"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="texto"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTitEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtLblTelefono" />
+
+    <TextView
+        android:id="@+id/txtTitDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Dirección"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitEmail" />
+
+    <TextView
+        android:id="@+id/txtLblDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="texto"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTitDireccion"
+        app:layout_constraintTop_toBottomOf="@+id/txtLblEmail" />
+
+    <TextView
+        android:id="@+id/txtTitFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Fecha de Nacimiento:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitDireccion" />
+
+    <TextView
+        android:id="@+id/txtLblFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="texto"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTitFecha"
+        app:layout_constraintTop_toBottomOf="@+id/txtLblDireccion" />
+
+    <TextView
+        android:id="@+id/txtTitEstudios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Nivel de estudios alcanzados:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitFecha" />
+
+    <TextView
+        android:id="@+id/txtLblEstudios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="texto"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTitEstudios"
+        app:layout_constraintTop_toBottomOf="@+id/txtLblFecha" />
+
+    <TextView
+        android:id="@+id/txtTitIntereses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Intereses:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitEstudios" />
+
+    <TextView
+        android:id="@+id/txtLblInteres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="texto"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTitIntereses"
+        app:layout_constraintTop_toBottomOf="@+id/txtLblEstudios" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

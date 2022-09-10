@@ -25,8 +25,8 @@ public class activity_contacto_lista_mostrar extends AppCompatActivity {
         Intent secondIntent = getIntent( );
         String valor = secondIntent.getStringExtra("SELECCIONADO");
 
-        TextView myText = (TextView) findViewById(R.id.TextViewSeMostrara);
-        myText.setText("\n\n\n Se mostraran los datos de: \n\n"+valor);
+        //TextView myText = (TextView) findViewById(R.id.TextViewSeMostrara);
+        //myText.setText("\n\n\n Se mostraran los datos de: \n\n"+valor);
 
         mostrar(valor);
     }
@@ -38,6 +38,7 @@ public class activity_contacto_lista_mostrar extends AppCompatActivity {
             InputStreamReader archivo = new InputStreamReader(openFileInput("agenda.txt"));
             BufferedReader lector= new BufferedReader(archivo);
             String linea= lector.readLine();
+
             while(linea!=null){
 
                 agenda= linea+"\n\n\n";
@@ -45,20 +46,22 @@ public class activity_contacto_lista_mostrar extends AppCompatActivity {
                 String[] partes = agenda.split(",");
 
                 //ACA FALTA MATCHEAR LA FILA CON EL VALOR QUE TENGO DEL OTRO LADO (Nombre Apellido y TELEFONO)
-                if (stream(partes).anyMatch(valor::equals)) {
-                    TextView myText = (TextView) findViewById(R.id.TextView);
-                    TextView myText2 = (TextView) findViewById(R.id.TextView2);
-                    TextView myText3 = (TextView) findViewById(R.id.TextView3);
-                    TextView myText4 = (TextView) findViewById(R.id.TextView4);
-                    TextView myText5 = (TextView) findViewById(R.id.TextView5);
-                    TextView myText6 = (TextView) findViewById(R.id.TextView6);
+                if (valor.equals(partes[0] + " " + partes[1] + " - " + partes[2])) {
+                    TextView txtNombre = (TextView) findViewById(R.id.txtLblNombre);
+                    TextView txtTelefono = (TextView) findViewById(R.id.txtLblTelefono);
+                    TextView txtEmail = (TextView) findViewById(R.id.txtLblEmail);
+                    TextView txtDireccion = (TextView) findViewById(R.id.txtLblDireccion);
+                    TextView txtFecha = (TextView) findViewById(R.id.txtLblFecha);
+                    TextView txtEstudios = (TextView) findViewById(R.id.txtLblEstudios);
+                    TextView txtInteres = (TextView) findViewById(R.id.txtLblInteres);
 
-                    myText.setText(valor);
-                    myText2.setText(partes[1]);
-                    myText3.setText(partes[2]);
-                    myText4.setText(partes[3]);
-                    myText5.setText(partes[4]);
-                    myText6.setText(partes[5]);
+                    txtNombre.setText(partes[0] + " " + partes[1]);
+                    txtTelefono.setText(partes[3] + " - " + partes[6]);
+                    txtEmail.setText(partes[2] + " - " + partes[7]);
+                    txtDireccion.setText(partes[4]);
+                    txtFecha.setText(partes[5]);
+                    txtEstudios.setText(partes[8]);
+                    txtInteres.setText(partes[9]);
 
                     lector.close();
                     archivo.close();

@@ -6,7 +6,9 @@
         <entry key="..\:/Users/CryoXz/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_agregar.xml" value="0.358695652173913" />
         <entry key="..\:/Users/CryoXz/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_formulario_extendido.xml" value="0.358695652173913" />
         <entry key="..\:/Users/CryoXz/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_lista.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/CryoXz/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_lista_mostrar.xml" value="0.33" />
         <entry key="..\:/Users/CryoXz/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/CryoXz/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/listview_item_agenda.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/TP2Grupo6/app/src/main/res/layout/activity_contacto_agregar.xml" value="0.33" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/TP2Grupo6/app/src/main/res/layout/activity_contacto_formulario_extendido.xml" value="0.33" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/TP2Grupo6/app/src/main/res/layout/activity_contacto_lista.xml" value="0.36666666666666664" />
@@ -16,16 +18,6 @@
         <entry key="..\:/Users/Jason/AndroidStudioProjects/TP2Grupo6/app/src/main/res/layout/contacto_lista.xml" value="0.1" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/TP2Grupo6/app/src/main/res/layout/menu.xml" value="0.34601449275362317" />
         <entry key="..\:/Users/Jason/AndroidStudioProjects/TP2Grupo6/app/src/main/res/menu/menuenactivity.xml" value="0.30085470085470084" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_agregar.xml" value="0.2463768115942029" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_formulario_extendido.xml" value="0.2463768115942029" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_lista.xml" value="0.2463768115942029" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/activity_main.xml" value="0.2463768115942029" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/TP2Grupo6_TP2/app/src/main/res/layout/listview_item_agenda.xml" value="0.1" />
-        <entry key="..\:/Users/Ricardo Recofsky/Documents/GitHub/PROG AVANZADA II/TP1/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_agregar.xml" value="0.1" />
-        <entry key="..\:/Users/Ricardo Recofsky/Documents/GitHub/PROG AVANZADA II/TP1/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_formulario_extendido.xml" value="0.1" />
-        <entry key="..\:/Users/Ricardo Recofsky/Documents/GitHub/PROG AVANZADA II/TP1/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_lista.xml" value="0.1" />
-        <entry key="..\:/Users/Ricardo Recofsky/Documents/GitHub/PROG AVANZADA II/TP1/TP2Grupo6_TP2/app/src/main/res/layout/activity_contacto_lista_mostrar.xml" value="0.1" />
-        <entry key="..\:/Users/Ricardo Recofsky/Documents/GitHub/PROG AVANZADA II/TP1/TP2Grupo6_TP2/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -63,7 +63,7 @@ public class Contacto_Lista extends AppCompatActivity {
 
                 //corto la cadena solo para mostrar el nombre, apellido y mail
                 String[] partes = agenda.split(",");
-                lcontactos.add(partes[0] + " " + partes[1] + " - " + partes[3]);
+                lcontactos.add(partes[0] + " " + partes[1] + " - " + partes[2]);
 
                 //para que se muestran todos los datos
                 //lcontactos.add(agenda);
